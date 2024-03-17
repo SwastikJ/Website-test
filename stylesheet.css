@@ -10,7 +10,7 @@ body{
 
 
 *, *::after, *::before{
-    font-family: 'Trueno';
+    font-family: Outfit;
     font-size: medium;
     color: white;
     margin: 0;
@@ -175,6 +175,7 @@ main{
     width: auto;
     left: calc(50% + 410px);
     top: calc(50% - 33px);
+    font-family: 'Outfit';
     font-size: 2rem;
     font-weight: 900;
     color: white;
