@@ -1,0 +1,230 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right,#ff98bb,#bce4ff);
+    font-family: Outfit;
+}
+
+
+*, *::after, *::before{
+    font-family: 'Trueno';
+    font-size: medium;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: absolute;
+    z-index: 9999;
+    width:100%;
+    top: 0%;
+    left: 0%;
+}
+/* 
+header:after {
+    content: ""; 
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgb(142, 255, 166), rgb(255, 255, 255), rgba(122, 50, 255, 0.76));
+    border-image-slice: 1;
+} */
+
+#navbar{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 2vh 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navlinks{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navlogo a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding: 0 1.5rem;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#navlinks a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.83 rem;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: #00010d;
+}
+
+.bg{
+    position: absolute;
+    width: 1550px;
+    top: 50%;
+    left: calc(50% - 80px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.blur{
+    position: absolute;
+    width: 830px;
+    top: calc(50% + 30px);
+    left: calc(50% - 280px);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.socialblur{
+    position: absolute;
+    width: 760px;
+    top: calc(50% + 30px);
+    left: calc(50% + 360px);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.ballpink{
+    position: absolute;
+    width: 60px;
+    top: calc(50% + 70px);
+    left: calc(50% + 40px);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.ballyellow{
+    position: absolute;
+    width: 60px;
+    top: calc(50% + 140px);
+    left: calc(50% - 590px);
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.ballcyan{
+    position: absolute;
+    width: 50px;
+    top: calc(50% - 145px);
+    left: calc(50% - 30px);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.Explore{
+    position: absolute;
+    width: 90px;
+    top: calc(50% + 40px);
+    left: calc(50% - 280px);
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+.address{
+    position: absolute;
+    width: 320px;
+    top: calc(50% + 130px);
+    left: calc(50% - 200px);
+    transform: translate(-50%, -50%);
+    z-index: 7;
+}
+
+
+.pinterest, .whatsapp, .x{
+    position: absolute;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    left: calc(50% + 240px);
+    z-index: 7;
+}
+
+.pinterest{
+    top: calc(50% + 50px);
+}
+
+.whatsapp{
+    top: calc(50% - 30px);
+}
+
+
+.whatsapptext{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-decoration: none;
+    width: auto;
+    left: calc(50% + 410px);
+    top: calc(50% - 33px);
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    z-index: 8;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s cubic-bezier(0.2, 0.49, 0.32, 0.98);
+}
+.whatsapptext:hover{
+    color: #a3ffbc;
+}
+
+.whatsappfront{
+    cursor: pointer;
+}
+
+
+.x{
+    top: calc(50% + 130px);
+}
+
+.title{
+    position: absolute;
+    width: 420px;
+    top: calc(50% - 56px);
+    left: calc(50% - 335px);
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
+
+
+.socialmedia{
+    position: absolute;
+    width: 170px;
+    top: calc(50% - 106px);
+    left: calc(50% + 375px);
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
+
+.vignette{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0)65%, rgba(0,0,0,0.3));
+    pointer-events: none;
+}
+
+.parallax {
+    transition: transform 0.5s cubic-bezier(0.2, 0.49, 0.32, 0.98) color 0.3s cubic-bezier(0.2, 0.49, 0.32, 0.98)
+}
